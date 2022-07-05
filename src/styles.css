@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+}
+
+.backgroundSlider {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  -webkit-animation: slide 20s infinite;
+          animation: slide 20s infinite;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: rgba(255, 255, 255, 0.568);
+  overflow: auto;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  justify-items: center;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.navbar-item {
+  font-size: 1.5rem;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+.welcome-sec {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.welcome-sectitle {
+  font-weight: 700;
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #5c5c5c;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.welcome-secdescript {
+  background: radial-gradient(circle, #c5c5c5ad 70%, transparent 100%);
+}
+
+.welcome-secdescript-text {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 6rem 1rem 6rem;
+  background-color: #5c5c5c;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 2.5s;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    background-image: url(../src/assets/img/slider/slider1.jpg);
+  }
+  25% {
+    background-image: url(../src/assets/img/slider/slider1.jpg);
+  }
+  25.01% {
+    background-image: url(../src/assets/img/slider/slider2.jpg);
+  }
+  50% {
+    background-image: url(../src/assets/img/slider/slider2.jpg);
+  }
+  50.01% {
+    background-image: url(../src/assets/img/slider/slider3.jpg);
+  }
+  75% {
+    background-image: url(../src/assets/img/slider/slider3.jpg);
+  }
+  75.01% {
+    background-image: url(../src/assets/img/slider/slider4.jpg);
+  }
+  100% {
+    background-image: url(../src/assets/img/slider/slider4.jpg);
+  }
+}
+
+@keyframes slide {
+  0% {
+    background-image: url(../src/assets/img/slider/slider1.jpg);
+  }
+  25% {
+    background-image: url(../src/assets/img/slider/slider1.jpg);
+  }
+  25.01% {
+    background-image: url(../src/assets/img/slider/slider2.jpg);
+  }
+  50% {
+    background-image: url(../src/assets/img/slider/slider2.jpg);
+  }
+  50.01% {
+    background-image: url(../src/assets/img/slider/slider3.jpg);
+  }
+  75% {
+    background-image: url(../src/assets/img/slider/slider3.jpg);
+  }
+  75.01% {
+    background-image: url(../src/assets/img/slider/slider4.jpg);
+  }
+  100% {
+    background-image: url(../src/assets/img/slider/slider4.jpg);
+  }
+}
+/*# sourceMappingURL=styles.css.map */
